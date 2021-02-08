@@ -1,0 +1,580 @@
+
+.navigation-bar {
+    margin:0;
+    position: sticky;
+    top: 0;
+    float: left;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background-color:#D8B370;
+    opacity: .9;
+    z-index: 99999;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+    
+}
+
+#login {
+    width: 50px;
+    height: 50px;
+}
+
+
+.catalogo-icon {
+    float: right;
+    vertical-align:top;
+    width: 50px;
+    height: 50px;
+    margin-right:30px;
+}
+
+
+#nome-empresa {
+    width: 200px;
+    margin-left: 50px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-left:170px;
+}
+
+#open {
+    width: 50px;
+    height: 50px;
+}
+
+#carrinho {
+    width: 50px;
+    height: 50px;
+}
+
+#sobre-empresa {
+    width: 50px;
+    height: 50px;
+}
+
+#contato {
+    width: 50px;
+    height: 50px;
+}
+
+
+.navigation-bar >ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigation-bar >ul li {
+    float: left;
+    border-right: 1.5px solid black ;
+
+
+}
+
+.navigation-bar >ul li:first-child {
+    border-right: none ;
+}
+
+.navigation-bar >ul li a.active {
+    background-color:blanchedalmond ;
+}
+
+
+.navigation-bar >ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px;
+    text-decoration: none; 
+}
+
+
+
+.catalogo {
+    background-color:#E6D1AB;
+    opacity: .9;
+    width: 80%;
+    height: 1200px;
+    transition: height 0.2 ease-out;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top:5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+
+}
+
+.catalogo ul {
+    list-style: none;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    text-align:center;
+}
+
+
+form.search-box {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+form.search-box input[type=search] {
+    width: 90%;
+    height: 38px;
+    font-size: 17px;
+    border-radius: 5px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+    color: black;
+    margin:0 0 0 .5em; 
+    padding:.4em 0 .4em .6em;
+    background: ivory ;
+    float:left;
+}
+
+form.search-box button {
+    width: 3%;
+    padding: 18px;
+    border-radius: 5px;
+    background-image: url("file:///Users/rodrigoludermir/Documents/DSW1/Projeto/imagens/search-icon.png");
+    background-size: 36px 36px;
+    background-color: #493D30;
+    border-top:thin solid black;
+    box-shadow:1px 1px 1px 0px black;
+    float: left;
+
+}
+
+::placeholder{
+    color:dimgrey;
+}
+
+
+.destaques {
+    position: relative;
+    margin: auto;
+}
+
+.bebida-destaque{
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    height: 280px;
+    background-color: #F9EED9;
+    border-radius: 5px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 10%;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: #665541;
+
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot.active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.destaques {
+    position: relative;
+    margin: auto;
+}
+
+
+.text {
+    color: black;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#mais {
+    margin-bottom: 5%;
+    width: 5%;
+    height: 20px;
+    border-radius: 10px;
+    background-size: 140px 90px;
+    background-color: #9F8469;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+
+}
+
+#menos {
+    width: 5%;
+    height: 20px;
+    border-radius: 10px;
+    background-size: 140px 90px;
+    background-color: #9F8469;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+
+}
+
+
+
+
+#b2 {
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    background-image: url("file:///Users/rodrigoludermir/Documents/DSW1/Projeto/imagens/add.png");
+    background-size: 140px 90px;
+    background-color: #9F8469;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+
+}
+
+
+
+/* LOGIN */
+
+
+.login {
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color:#E6D1AB;
+    opacity: .9;
+    width: 50%;
+    height: 15cm;
+    border: 10px solid black;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+
+}
+
+
+.login ul {
+    list-style: none;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    text-align:center;
+}
+
+#logo-login {
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    top:5%;
+    left:45%;
+}
+
+#form-login {
+    position: absolute;
+    top:30%;
+    left:15%;
+    width: 100%;
+    height: 100%;
+}
+
+#email-login {
+    width: 70%;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 5px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+    color: black;
+    background: ivory ;
+
+}
+
+#senha-login {
+    width: 70%;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+    color: black;
+    background: ivory ;
+}
+
+#botao-entrar {
+    color: wheat;
+    position: absolute;
+    border-radius: 5px;
+    top: 15%;
+    right: 35%;
+    width: 60%;
+    height: 5%;
+    background-color:#493D30 ;
+}
+
+/* Accordion */
+
+.accordion {
+    position: absolute;
+    left: 13%;
+    top: 85%;
+    width: 75%;
+}
+
+.accordion-item {
+    background-color: #665541;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3rem;
+    line-height: 1.25rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header::after {
+    content: "\25E2";
+    transform: rotate(45deg);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    position: absolute;
+    right:1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-item-header.active::after {
+    transform: rotate(-135deg);
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2 ease-out;
+}
+
+.accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 2px solid;
+    background-color: #F9EED9;
+}
+
+.txt-acd {
+        color: black;
+        font-size: 20px;
+        padding: 8px 12px;
+        top: 8px;
+        width: 100%;
+        text-align: center;
+        margin-top: 0%;
+}
+
+
+
+/* rodape */
+
+footer {
+    /* margin:0; */
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color:#D8B370;
+    opacity: .9;
+    z-index: 99999;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+    text-align: center;
+    bottom: 0;
+    display: inline-block;
+    position:inherit;
+    
+}
+
+
+
+/* carrinho */
+
+
+.carrinho {
+    background-color:#E6D1AB;
+    opacity: .9;
+    width: 80%;
+    /* height: 1000px; */
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top:5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+}
+
+#add_prod {
+    background-color: #493D30;
+    margin: 10px 0;
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+}
+
+#finalizar {
+    float: right;
+    background-color: #493D30;
+    margin: 10px 0;
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+
+}
+
+
+
+
+
+ /* Sobre a Empresa */
+
+.sobre-empresa {
+    background-color:#E6D1AB;
+    opacity: .9;
+    width: 80%;
+    /* height: 1000px; */
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top:5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    border-top:thin solid  black;
+    border-right:thin solid black;
+    border-bottom:0;
+    border-left:thin solid  black;
+    box-shadow: 0px 1px 1px 1px black;
+}
